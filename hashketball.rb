@@ -160,7 +160,11 @@ def team_colors(team)
       return element[:colors]
     end
   end
+<<<<<<< HEAD
   return "Team not found."
+=======
+  return "Player not found."
+>>>>>>> 08c774edf3507467ee30be01635a34c1e932d9cc
 end
 
 def team_names
@@ -176,6 +180,7 @@ def player_numbers(team)
   
   game_hash.each do |key, element|
     if element[:team_name].include? "#{team}"
+<<<<<<< HEAD
       element[:players].each do |key2, element2|
         jersey_numbers << key2[:number]
       end
@@ -193,10 +198,19 @@ def player_stats(player)
         return element[:players][player_index]
       end
     end
+=======
+      #binding.pry
+      element[:players].each do |key2, element2|
+        jersey_numbers << element2[:number]
+        return jersey_numbers
+      end
+    
+>>>>>>> 08c774edf3507467ee30be01635a34c1e932d9cc
   end
   return "Player not found."
 end
 
+<<<<<<< HEAD
 def big_shoe_rebounds
   largest_shoe_size = 0
   largest_shoe_size_rebounds = 0
@@ -214,6 +228,14 @@ end
 
 
 #hashketball swoosh
+=======
+
+
+
+
+
+
+>>>>>>> 08c774edf3507467ee30be01635a34c1e932d9cc
 
 
 
